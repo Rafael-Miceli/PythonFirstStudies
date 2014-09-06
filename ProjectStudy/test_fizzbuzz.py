@@ -23,13 +23,22 @@ class TestFizzBuzz(unittest.TestCase):
 
         self.assertEqual("buzz", result)
 
-    def test_should_return_number_when_multiple_of_5(self):
+    def test_should_return_number_when_not_multiple_of_5_or_3(self):
         num = 7
         fizz_buzz_study = FizzBuzzStudy()
 
         result = fizz_buzz_study.is_fizz_or_buzz(num)
 
         self.assertEqual(num, result)
+
+    def test_should_return_fizzbuzz_when_multiple_of_5_and_3(self):
+        num = 30
+        fizz_buzz_study = FizzBuzzStudy()
+
+        result = fizz_buzz_study.is_fizz_or_buzz(num)
+
+        self.assertEqual("fizzbuzz", result)
+
 
 
 if __name__ == "__main__":
