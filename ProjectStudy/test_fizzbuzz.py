@@ -39,6 +39,10 @@ class TestFizzBuzz(unittest.TestCase):
 
         self.assertEqual("fizzbuzz", result)
 
+    def test_100_fizzbuzz_call(self):
+        fizz_buzz_study = FizzBuzzStudy()
+        fizz_buzz_study._100_fizz_buzz_calls()
+
 
 
 if __name__ == "__main__":
